@@ -1,0 +1,88 @@
+@media only screen and (min-width:0px) and (max-width:767px) {
+    .d2c_gallery_wrapper {
+        padding: 50px 0;
+    }
+
+    .d2c_gallery_wrapper .d2c_grid {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        grid-row-gap: 12px;
+    }
+
+    .d2c_gallery_wrapper .d2c_image_wrapper {
+        width: 100%;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .d2c_height_measurement_2 {
+        grid-row: span 1;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width: 991px) {
+    .d2c_gallery_wrapper {
+        
+    }
+
+    .d2c_gallery_wrapper .d2c_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .d2c_gallery_wrapper .d2c_image_wrapper {
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .d2c_height_measurement_2 {
+        grid-row: span 1;
+    }
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .d2c_gallery_wrapper {
+        padding: 50px 0;
+    }
+
+    .d2c_gallery_wrapper .d2c_grid {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .d2c_gallery_wrapper .d2c_image_wrapper {
+        height: 300px;
+    }
+
+    .d2c_height_measurement_2 {
+        grid-row: span 1;
+    }
+
+    .d2c_gallery_wrapper .d2c_radius1,
+    .d2c_gallery_wrapper .d2c_radius2,
+    .d2c_gallery_wrapper .d2c_radius3,
+    .d2c_gallery_wrapper .d2c_radius4,
+    .d2c_gallery_wrapper .d2c_radius_basic {
+        border-radius: 12px;
+    }
+
+}
+
+@media only screen and (min-width:1200px) and (max-width:1500px) {
+    .d2c_gallery_wrapper {
+    }
+
+}
+
+
+
+
+
+/* 
+    Template Name: {{10 gallery section bootstrap Free}}
+    Template URL: {{https://designtocodes.com/product/10-responsive-bootstrap-gallery-section}}
+    Description: {{Don't miss out on the opportunity to level up your website with our 10 Responsive Bootstrap Gallery Section. Download now and watch your website come to life!}}
+    Author: DesignToCodes
+    Author URL: https://www.designtocodes.com/
+    Text Domain: {{ Gallery Section UI Kits }}  
+*/

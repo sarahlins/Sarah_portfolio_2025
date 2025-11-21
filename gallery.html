@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Freebie: 4 Bootstrap Gallery Templates</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-clean.css">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .modal-dialog {
+            max-width: 90%;
+        }
+        .modal-content {
+            background: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .modal-body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .modal-caption {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 50px;
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilos personalizados para as setas */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 60px; /* Largura das setas */
+            height: 60px; /* Altura das setas */
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+            border-radius: 50%; /* Deixa as setas redondas */
+            top: 50%; /* Centraliza verticalmente */
+            transform: translateY(-50%); /* Ajuste fino para centralização */
+            opacity: 1; /* Torna as setas sempre visíveis */
+        }
+        .carousel-control-prev {
+            left: -80px; /* Posiciona a seta anterior fora da imagem */
+        }
+        .carousel-control-next {
+            right: -80px; /* Posiciona a próxima seta fora da imagem */
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 30px; /* Tamanho do ícone */
+            height: 30px; /* Tamanho do ícone */
+        }
+    </style>
+</head>
+<body>
+   <!-- navbar -->
+   <nav class="navbar navbar-light bg-light px-5">
+    <a class="navbar-brand" href="index.html">
+       <img class="" src="src/logo-sm.png" style="width: 75px; height: 27px;">
+    </a>
+    <div class="ms-auto d-flex gap-4">
+        <a href="#sobre" class="link-nav text-dark fw-semibold text-decoration-none">Sobre mim</a>
+        <a href="#galeria" class="link-nav text-dark fw-semibold text-decoration-none">Galeria</a>
+        <a href="#curriculo" class="link-nav text-dark fw-semibold text-decoration-none">Currículo</a>
+    </div>
+</nav>
+<!-- navbar -->
+
+    <div class="container gallery-container">
+        <h2 class="mt-2 text-center">Galeria de projetos</h2>
+        <p class="page-description text-center">Clique nas imagens para ver outros diversos tipos de projeto que já fiz</p>
+        <div class="tz-gallery">
+            <div class="row">
+                <!-- Imagem 1 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/park.jpg" class="card-img-top" alt="Park">
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagem 2 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/bridge.jpg" class="card-img-top" alt="Bridge">
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagem 3 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/tunnel.jpg" class="card-img-top" alt="Tunnel">
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagem 4 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/image4.jpg" class="card-img-top" alt="Image 4">
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagem 5 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/image5.jpg" class="card-img-top" alt="Image 5">
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagem 6 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/image6.jpg" class="card-img-top" alt="Image 6">
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagem 7 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/image7.jpg" class="card-img-top" alt="Image 7">
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagem 8 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/image8.jpg" class="card-img-top" alt="Image 8">
+                        </a>
+                    </div>
+                </div>
+                <!-- Imagem 9 -->
+                <div class="col-md-4">
+                    <div class="card position-relative">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#carouselModal">
+                            <img src="../images/image9.jpg" class="card-img-top" alt="Image 9">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal with Carousel -->
+    <div class="modal fade" id="carouselModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button class="close-modal" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                <div class="modal-body">
+                    <div id="carouselGallery" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <img src="../images/park.jpg" class="d-block" alt="Park">
+                                <p class="modal-caption">Park</p>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <img src="../images/bridge.jpg" class="d-block" alt="Bridge">
+                                <p class="modal-caption">Bridge</p>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <img src="../images/tunnel.jpg" class="d-block" alt="Tunnel">
+                                <p class="modal-caption">Tunnel</p>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="carousel-item">
+                                <img src="../images/image4.jpg" class="d-block" alt="Image 4">
+                                <p class="modal-caption">Image 4</p>
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="carousel-item">
+                                <img src="../images/image5.jpg" class="d-block" alt="Image 5">
+                                <p class="modal-caption">Image 5</p>
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="carousel-item">
+                                <img src="../images/image6.jpg" class="d-block" alt="Image 6">
+                                <p class="modal-caption">Image 6</p>
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="carousel-item">
+                                <img src="../images/image7.jpg" class="d-block" alt="Image 7">
+                                <p class="modal-caption">Image 7</p>
+                            </div>
+                            <!-- Slide 8 -->
+                            <div class="carousel-item">
+                                <img src="../images/image8.jpg" class="d-block" alt="Image 8">
+                                <p class="modal-caption">Image 8</p>
+                            </div>
+                            <!-- Slide 9 -->
+                            <div class="carousel-item">
+                                <img src="../images/image9.jpg" class="d-block" alt="Image 9">
+                                <p class="modal-caption">Image 9</p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white shadow-sm">
+        <div class="row d-flex justify-content-center bg-white mt-4 pt-4">
+    
+          <div class="col-12 col-lg-4 mb-lg-4 text-center text-lg-end">
+            <img src="src/logo-sm.png" class="p-3 " alt="..." style="">
+    
+          </div>
+          <div class="col-12 col-lg-1 mb-4  text-center borda-test p-1 d-none d-sm-block">
+    
+          </div>
+    
+          <div class="col-12 col-lg-4  text-lg-start text-center ">
+            <div class="  text-lg-start text-center "><p class="mt-2 mb-0 " style="font-size: 18px;">Vamos colaborar juntos!</p></div>          
+           
+            
+            
+              <a href="https://www.linkedin.com/in/sarahferreira07/" target="_blank" style="color: transparent;"><img src="src/linkedin.svg" style="width: 20px; height: 20px;">
+              </a>
+             <a href="https://www.behance.net/sarahmyrlane" target="_blank"><img src="src/behance.svg" class="mx-1" style="width: 20px; height: 20px;"></a>
+          </div>
+    
+          <p class="text-center text-cnpj py-lg-0 py-4">Entre em contato também via e-mail: sarahmyrlane@gmail.com</p>
+    
+    
+        </div>
+      </footer>
+    <script>
+        function closeModal(event) {
+            if (!event.target.closest('.carousel-inner') && !event.target.closest('.carousel-control-prev') && !event.target.closest('.carousel-control-next')) {
+                var modal = document.getElementById('carouselModal');
+                var modalInstance = bootstrap.Modal.getInstance(modal);
+                modalInstance.hide();
+            }
+        }
+
+        document.querySelector('.modal-content').addEventListener('click', closeModal);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

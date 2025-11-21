@@ -1,0 +1,99 @@
+:root {
+    /* Color */
+    --primary_color: #0D559D;
+    --secondary_color: #44CD85;
+    /* BG */
+    --primary_bg: #FFFFFF;
+    /* Border Radius */
+    --primary_radius: 12px;
+    --secondary_radius: 25px;
+    /* font */
+    --primary_font: "Manrop", sans-serif;
+    /* Height */
+    --primary_height: 272px;
+    --secondary_height: 560px;
+
+}
+
+.d2c_gallery_wrapper {
+    font-family: var(--primary_font);
+}
+
+.d2c_gallery_wrapper h2 {
+    color: var(--primary_color);
+    font-family: var(--primary_font);
+    font-weight: 500;
+}
+
+.d2c_gallery_wrapper h2 span {
+    color: var(--secondary_color);
+}
+
+/* nav-tab start */
+
+.d2c_gallery_wrapper ul li button {
+    text-transform: capitalize;
+}
+
+.nav-pills .nav-link {
+    color: var(--primary_color);
+    padding: 10px 40px 9px;
+    border-radius: var(--secondary_radius);
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary_color);
+    color: white;
+    border-radius: var(--secondary_radius);
+}
+
+
+/* nav-tab end*/
+
+.d2c_gallery_wrapper .d2c_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.d2c_gallery_wrapper .d2c_image_wrapper {
+    width: 100%;
+    border-radius: var(--primary_radius);
+    overflow: hidden;
+}
+
+.d2c_height_measurement_1 {
+    height: var(--primary_height);
+}
+
+.d2c_height_measurement_2 {
+    height: var(--secondary_height);
+    grid-row: span 2;
+}
+
+.d2c_gallery_wrapper .d2c_image_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all ease 0.4s;
+}
+
+.d2c_gallery_wrapper .d2c_image_wrapper:hover img {
+    transform: scale(1.15);
+    transition: all ease 0.4s;
+}
+
+
+
+
+
+/* 
+    Template Name: {{10 gallery section bootstrap Free}}
+    Template URL: {{https://designtocodes.com/product/10-responsive-bootstrap-gallery-section}}
+    Description: {{Don't miss out on the opportunity to level up your website with our 10 Responsive Bootstrap Gallery Section. Download now and watch your website come to life!}}
+    Author: DesignToCodes
+    Author URL: https://www.designtocodes.com/
+    Text Domain: {{ Gallery Section UI Kits }}  
+*/
